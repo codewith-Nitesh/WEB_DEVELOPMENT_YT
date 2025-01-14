@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boss{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .container{
+            background-color: yellow;
+            border: 3px solid black;
+            width: 500px;
+            height: 500px;
+            border-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* align-content: center; */
+            /* align-self: center; */
+            /* place-items: center; */
+            flex-direction: column;
+
+        }
+        .box{
+            background-color: blueviolet;
+            width: 50%;
+            display: flex;
+            padding: 20px;
+            border-radius: 40px;
+            box-shadow: 2px 2px 3px 2px black;
+            /* align-content: center; */
+            justify-content: center;
+            align-content: center;
+            margin-bottom: 10px;
+        }
+        .box2{
+            background-color: blueviolet;
+            width: 50%;
+            display: flex;
+            padding: 20px;
+            border-radius: 40px;
+            box-shadow: 2px 2px 3px 2px black;
+            align-content: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body><div class="boss">
+    <div class="container"><div class="box">
+        <label for="colleges">colleges:</label>
+        <select name="Colleges" id="colleges">colleges
+            <option disabled selected >name of colleges</option>
+            <option value="1">chandigarh university</option>
+            <option value="2">Chitkara university</option>
+        </select><br/><br/>
+    </div><div class="box2"><label for="username">username:</label>
+        <input type="text" id="username"></div>
+</div>
+    
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .box{
+            height: 70%;
+            width: 70%;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .div{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             gap: 30px;
+          }
+          .content2{
+             height: 70%;
+             width: 70%;
+             display: flex;
+             flex-direction: column;
+             gap: 5px;
+             border: 0.2px solid black;
+             justify-content: center;
+             align-items: center;
+             padding: 10px;
+             border-radius: 10px;
+             transition: all 0.1s linear 0.1s;
+
+          }
+             .content2:hover{
+             transform: scale(0.2px);
+             box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+             border-radius: 10px;
+             }
+          #email{
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            display: flex;
+            padding: 2px;
+
+          }
+          #button{
+            width: 100%;
+            background-color: #4158D0;
+            color: aliceblue;
+            height: 40px;
+            border-radius: 5px;
+            transition: all 0.1s linear 0.1s;
+          }
+          #button:hover{
+            transform: scale(0.2px);
+            background-color: blue;
+          }
+          .line{
+            width: 80%;
+            border: 0.02px solid black;
+          }
+          #button2{
+            background-color: green;
+            color: white;
+            height: 40px;
+            border-radius: 5px;
+            width: 50%;
+          }
+          .content1{
+            display: flex;
+            flex-direction: column;
+          }
+          a{
+            text-decoration: none;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-underline-offset: 3px;
+          }
+          h2{
+            color: #4158D0;
+            font-size: 4rem;
+            text-align: justify;
+            
+          }
+          #Password{
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            display: flex;
+            padding: 2px;
+          }
+          p{
+            font-size: 1.5rem;
+            text-align:justify;
+          }
+          .emailandpass{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: center;
+          }
+          @media (max-width:700px) {
+            .div{
+              display: flex;
+              flex-direction: column;
+            }
+            .content1{
+              display: flex;
+              align-items: center;
+            }
+
+          }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <div class="div">
+                <div class="content1">
+                 <h2>Facebook</h2>
+                 <p>Connect with friend and the world around you</p>
+                </div>
+                <div class="content2">
+                  <div class="emailandpass">
+                    <div class="email">
+                      <label for="email"></label>
+                      <input type="text" id="email" placeholder="Email or phone number">
+    
+                     </div>
+                     <div class="password">
+                        <label for="Password"></label>
+                        <input type="password" id="Password" placeholder="Password">
+                     </div>
+                  </div>
+                   <button id="button">Login</button>
+                   <a href="s1">Forgot Password?</a>
+                   <div class="line"></div>
+                   <button id="button2">Create new account</button>
+                </div>
+                
+            </div>
+
+        </div></div>
+</body>
+</html>

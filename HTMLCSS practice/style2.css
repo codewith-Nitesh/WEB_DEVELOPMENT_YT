@@ -1,0 +1,45 @@
+img{
+    margin: 10px;
+}
+div{
+    border: 2px solid black;
+    margin-top: 50px;
+}
+#s2{
+    position: relative;
+    top: 100px;
+    position: absolute;
+}
+#s4{
+    position: fixed;
+}
+.container{
+height: 1000px;
+background-color: aqua;
+}
+.container3{
+    margin-top: 200px;
+    height: 1000px;
+}
+#s1{
+    position: sticky;
+    top: 0px;
+}
+.container2{
+    background-color: blueviolet;
+}
+button{
+    background-color:yellow;
+    font-size: 25px;
+    position: relative;
+    margin-top: 25px;
+    position: sticky;
+}
+.container4{
+    height: 1000px;
+    margin-top: 200px;
+}
+.container5{
+    height: 1000px;
+    margin-top: 200px;
+}

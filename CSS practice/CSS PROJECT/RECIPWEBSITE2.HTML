@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYAS DA DHABA</title>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        #navlist{
+            list-style-type: none;
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            /* margin-left: 15px;
+            margin-right: 15px; */
+            align-items: center;
+            width: 100%;
+            padding: 30px;
+            box-sizing: border-box;
+            gap: 20px;
+
+        }
+        nav{
+            width: 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100%;
+            width: 100vw;
+            background-color:#00DBDE;
+            background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+             
+        }
+        .navcontainer{
+            width:100vw;
+            background: rgb(238,174,202);
+            background: -moz-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            background: -webkit-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+            min-height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;  
+        }
+        #dhaba{
+            font-size: 2.8rem;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: azure;
+        }
+        #bgcolor{
+            display: flex;
+            gap: 25px;
+        }
+        #bgcolor:hover{
+        }
+        #bgcolor2:hover{
+            color: #e40ce7fa;
+            text-shadow: 0px 0px 5px skyblue;
+
+        }
+        .contentbox{
+            width: 50%;
+            margin:auto;
+            /* border:1px solid black; */
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 30px black;
+            flex-wrap: wrap;
+        }
+        .item{
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+        }
+        .footerbox{
+            background: rgb(238,174,202);
+            background: -moz-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            background: -webkit-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+            color: white;
+            width: 100vw;
+            overflow-x: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            font-size: 1.5rem;
+            width: 100%;
+        } 
+        .rightbox{
+            border-radius: 20px;
+            transition:all 0.3s linear 0.1s;
+        }
+        .rightbox:hover{
+            transform: scale(1.1);
+
+        }
+        .rightbox{
+            position: relative;
+            overflow: hidden;
+        }
+        .rightbox .overlay{
+            position: absolute;
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            background-color: rgb(36,34,34,0.713);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            opacity: 0;
+            transition:all 0.3s linear 0.2s;
+        }
+        .rightbox .overlay:hover{
+            opacity: 1;
+            box-shadow: 0px 0px 10px black;
+            transform: scale(1.1);
+        }
+        .rightbox .overlay span{
+            color: white;
+            font-size: 1.2rem;
+        }
+        .leftbox{
+            display: flex;
+            gap:20px;
+            flex-direction: column;
+        }
+        .leftbox h2{
+            font-size: 3rem;
+        }
+        #ingredientbox{
+            font-size: 1.7rem;
+        }
+        #recipebox{
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <div class="navcontainer"> 
+            <nav>
+                <ul id="navlist">
+                    <li>
+                        <p id="dhaba">BYAS DA  DHABA</p>
+                    </li>
+                    <li>
+                        <div id="bgcolor">
+                            <a href="#" id="bgcolor2">HOME</a>
+                            <a href="#" id="bgcolor2">CONTACT</a>
+                            <a href="#" id="bgcolor2">ABOUT</a>
+                            <a href="#" id="bgcolor2">ITEMS</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="contentbox">
+            <!-- item-1 -->
+            <section>
+                <div class="item">
+                    <div class="leftbox">
+                        <!-- heading -->
+                       <h2>GULABJAMUN</h2> <div>
+                            <h3>INGREDIENTS</h3>
+                            <ul id="ingredientbox">
+                            <li>SUGAR</li>
+                            <li>MEDA</li>
+                            <li>oil</li>
+                        </ul></div>
+                        <div>
+                            <h2>RECIPE</h2>
+                            <OL id="recipebox"><li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nulla!</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, officia!</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, animi.</li>
+                        </OL></div>
+                        </div>
+                        <div class="rightbox"><img src="../pexels-zenith-photographics-15014919.jpg" alt="hlogg" width="300px" height="400px">
+                        <div class="overlay"><a href="#"></a><span>CLICK  HERE TO BUY</span></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- item-2 -->
+                <section>
+                    <div class="item">
+                        <div class="leftbox">
+                            <!-- heading -->
+                           <h2>KAJUKATLI</h2> <div>
+                                <h3>INGREDIENTS</h3>
+                                <ul id="ingredientbox">
+                                <li>SUGAR</li>
+                                <li>MEDA</li>
+                                <li>oil</li>
+                            </ul></div>
+                            <div>
+                                <h2>RECIPE</h2>
+                                <OL id="recipebox"><li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nulla!</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, officia!</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, animi.</li>
+                            </OL></div>
+                            </div>
+                            <div class="rightbox"><img src="../kajukatli.jpeg" alt="hlogg" width="300px" height="400px">
+                            <div class="overlay"><span>CLICK HERE TO BUY</span></div></div>
+                        </div>
+                    </section>
+                        </div>               
+    </main>
+    <footer>
+        <div class="footerbox">
+            <p> copyright &copy; BYAS DA DHABA PVT LTD 2023 ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>  </div>
+</body>
+</html>

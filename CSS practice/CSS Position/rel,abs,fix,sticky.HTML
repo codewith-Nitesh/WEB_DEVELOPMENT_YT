@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .class{
+                background-color: aqua;
+                height: 100vh;
+                width: 100vw;
+                border: 5px solid black;
+                /* box-sizing: border-box; */
+                margin-top: 50px;
+            }
+            .CONTAINER{
+                background-color: aqua;
+                height: 100vh;
+                width: 100vw;
+                border: 5px solid black;
+                /* box-sizing: border-box; */
+                display: flex;
+                flex-direction: row;
+                box-sizing: border-box;
+            }
+            .box1{
+               background-color: blueviolet;
+               height: 200px;
+               width: 250px;
+               border: 3px solid black;
+               margin: 20px;
+               position: absolute;
+               top: 100px;
+               left: 50px;
+            }
+            .box2{
+                background-color:brown;
+               height: 200px;
+               width: 250px;
+               border: 3px solid black;
+                margin: 20px; 
+                margin-top: 50px; 
+                position: relative;
+               top: 100px;
+               left: 100px;   
+            }
+            .box3{
+                background-color:cornflowerblue;
+               height: 200px;
+               width: 250px;
+               border: 3px solid black;
+               margin: 20px;
+               position:sticky;
+               top: 100px;
+               left: 50px;
+               position: absolute;
+               position:sticky;
+               top: 0px;
+            }
+            .box4{
+               background-color:green;
+               height: 200px;
+               width: 250px;
+               border: 3px solid black;
+               margin: 20px;
+               position: fixed;
+               left: 500px;
+            }
+        </style>
+    </head>
+    <body>
+         <div class="CONTAINER">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+         </div>  
+         <div class="class"></div>
+    </body>
+    </html>
+</body>
+</html>

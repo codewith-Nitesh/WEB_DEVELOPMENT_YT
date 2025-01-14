@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --custom-height:200px;
+            --custom-color:  aqua;
+        }
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            display: flex;
+            background-color: aquamarine;
+            border: 3px solid black;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            
+        }
+        .child{
+            display: flex;
+            background-color:var(--custom-color) ;
+            border: 3px solid black;
+            border-radius: 5px;
+            --primary-color:brown;
+            --custom-width:180px;
+            width: var(--custom-width);
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            /* align-content: center; */
+            /* margin: 200px 0px 30px 200px; */
+            box-shadow: -10px -5px 2px 2px gray;
+            box-shadow:  -5px -2px 2px gold;
+            padding: 10px;
+            text-shadow: 2px 2px black;
+            box-shadow: inset 5px 5px 2px 2px yellow;
+            text-shadow: 5px 8px 1px whitesmoke;
+            text-shadow: 0 0 3px #FF0000;
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><div class="child">Box 1</div></div>
+</body>
+</html>

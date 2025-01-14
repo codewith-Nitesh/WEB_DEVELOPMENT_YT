@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{
+            background-color: aqua;
+            border-radius: 10px;
+            border: 5px solid black;
+            height: 1000vh;
+            width: 1000vw;
+        }
+        #box1{
+            background-color: blueviolet;
+            border: 5px solid black;
+            border-radius: 20px;
+            height: 100px;
+            width: 200px;
+            margin: 20px;
+            position: relative; 
+            animation: leftmovement 2s linear 2s infinite alternate;
+        }
+        @keyframes leftmovement{
+            from{
+                top:0;
+                left: 0;
+            }
+            to{
+                top:0;
+                left: 800px;
+
+            }
+        }
+        #box2{
+            background-color: red;
+            border: 5px solid black;
+            border-radius: 20px;
+            height: 100px;
+            width: 200px;
+            margin: 20px;
+            position: relative; 
+            animation: rightmovement 2s linear 2s infinite alternate;
+        }
+        @keyframes rightmovement{
+            from{
+                top:600px;
+                left: 0;
+            }
+            to{
+                top:600px;
+                left: 800px;
+
+            }
+        }
+        .circle{
+            background-color: yellow;
+            border: 5px solid black;
+            border-radius: 1000px;
+            height: 50px;
+            width: 50px;
+            margin: 20px;
+            position: relative;
+            top: 150px;
+            left: 450px;
+            animation: ball 4s linear 4s infinite alternate ;
+        }
+        @keyframes ball {
+            from{
+                top:20px;
+                left:500px;
+            }
+            to{
+                top: 20px;
+                left: 200px;
+            }
+
+        }
+        @keyframes ball{
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+            30%{
+                top: 5%;
+                left: 3%;
+
+            }
+            40%{
+                top:1% ;
+                left: 4%;
+
+            }
+            50%{
+                top:1% ;
+                left: 3%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container"><div class="box" id="box1"></div>
+   <div class="box" id="box2"></div><div class="circle"></div></div>
+</body>
+</html>

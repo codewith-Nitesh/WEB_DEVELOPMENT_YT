@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: yellow;
+            border: 5px solid black;
+            width: 800px;
+            height: 800px;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+    .box{
+        display: flex;
+        background-color:aqua;
+        height: 400px;
+        width: 400px;
+        border: 2px solid black;
+        border-radius: 5px;
+        /* align-self: center; */
+        /* align-self: flex-end; */
+        /* margin: 165px; */
+        justify-content: center;
+        align-items: center;
+    }
+    @media (min-width:500px) {
+        .box{
+            background-color: yellow;
+        }
+    }
+    @media(min-width:300px) and (max-width:500px){
+        .box{
+            background-color: crimson;
+        }
+    }
+   </style> 
+</head>
+<body>
+    <div class="container"><div class="box">
+        hello ji
+    </div></div>
+    
+</body>
+</html>

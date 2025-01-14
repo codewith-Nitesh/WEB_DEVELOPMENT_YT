@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow-x: none;
+        }
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+        .container{
+            background-color: #85FFBD;
+            background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 550px;
+            width: 350px;
+            background-color: aliceblue;
+            border-radius: 30px;
+            display: flex;
+            border: 2px solid black;
+            flex-direction: column;
+            padding: 15px;
+            box-sizing: border-box;
+            transition: all 0.2s linear 0.01s;
+        }
+        .child1{
+            display: flex;
+            justify-content: center;
+        }
+        .child2{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             text-align: center;
+             flex-direction: column;
+             gap: 15px;
+        }
+        img{
+            width: 350px;
+        }
+        #para{
+            font-size: 13px;
+        }
+        .box:hover{
+            box-shadow: 0px 0px 10px 2px black;
+            transform: scale(1.01);  
+            transform: translateY(-3px);
+            border-width: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="child1"><img src="../qr-code-barcode-scanners-image-scanner-others-40279d9d743e41d968fa083ce7ff1719.png" alt=""></div>
+            <div class="child2"><h2>This is an attractive business Card</h2>
+            <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, molestias. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam enim quasi pariatur fugiat ratione dignissimos tempore maiores? Deleniti, architecto.</p></div>
+        </div></div>
+</body>
+</html>
